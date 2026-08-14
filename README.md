@@ -39,3 +39,25 @@ excluded from version control.
 The installed Strawberry application, extracted source, forensic reports, and
 proprietary assets must remain outside the version-controlled rebuild. Local
 reference documents belong under the ignored `docs/` directory.
+
+## Development
+
+Requirements: Node.js 22.12 or newer and Corepack.
+
+```powershell
+corepack pnpm install
+corepack pnpm check
+corepack pnpm dev
+```
+
+The first milestone provides a minimal Electron window with isolated main,
+preload, and renderer processes. The renderer has no direct Node.js access.
+
+## Workspace
+
+```text
+apps/desktop/          Electron main, preload, and Svelte renderer
+packages/contracts/    Shared, typed process-boundary contracts
+architecture/          Public architecture decision records
+scripts/               Repository security checks
+```
