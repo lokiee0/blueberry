@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["node", "vite/client"],
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true
+  },
+  "include": ["electron.vite.config.ts", "src/**/*.ts", "src/**/*.svelte"]
+}
