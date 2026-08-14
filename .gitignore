@@ -1,0 +1,5 @@
+# Private planning documents
+/docs/implementation-plan.md
+/docs/plans/
+/**/*-plan.md
+/**/*_PLAN.md
