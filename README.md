@@ -2,7 +2,8 @@
 
 Clean-room workspace for recreating the useful behavior of Strawberry Browser without depending on Strawberry's proprietary source, branding, authentication, billing, or hosted backend.
 
-See the [implementation plan](docs/implementation-plan.md) for the complete architecture, milestones, security requirements, data model, and acceptance criteria.
+Private implementation and forensic documentation is maintained locally and
+excluded from version control.
 
 ## Separation rules
 
@@ -33,12 +34,8 @@ See the [implementation plan](docs/implementation-plan.md) for the complete arch
 6. Optional synchronization, transcription, and local memory.
 7. Packaging, updates, security testing, and code signing.
 
-## Documentation
+## Clean-room boundary
 
-- [Documentation index](docs/README.md)
-- [Implementation plan](docs/implementation-plan.md)
-- [Forensic analysis reference](docs/forensic-analysis/README.md)
-
-The forensic reports are retained only as reference material. The installed
-Strawberry application, extracted source, and proprietary assets must remain
-outside this clean-room rebuild workspace.
+The installed Strawberry application, extracted source, forensic reports, and
+proprietary assets must remain outside the version-controlled rebuild. Local
+reference documents belong under the ignored `docs/` directory.
